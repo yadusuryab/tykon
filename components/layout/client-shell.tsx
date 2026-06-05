@@ -18,6 +18,7 @@ export function ClientShell({ children }: { children: React.ReactNode }) {
       {!isAdmin && <Header />}
       <main className="flex-1">{children}</main>
       {!hideFooter && <Footer />}
+      {/* hide WhatsApp button on admin pages */}
       {!isAdmin && <WhatsAppButton />}
     </>
   );
