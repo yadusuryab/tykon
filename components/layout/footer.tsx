@@ -233,27 +233,7 @@ function Footer() {
               </p>
 
               {/* Newsletter signup */}
-              <div className="mb-6">
-                <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-white/30 mb-3">
-                  Subscribe to our newsletter
-                </p>
-                <form className="flex gap-2">
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    className="flex-1 bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white text-sm
-                      placeholder:text-white/20 focus:outline-none focus:border-red-500/50 transition-colors"
-                  />
-                  <button
-                    type="submit"
-                    className="px-4 py-2 bg-red-500 hover:bg-red-600 rounded-lg text-white text-xs font-bold
-                      transition-all duration-200 hover:scale-105"
-                  >
-                    Subscribe
-                  </button>
-                </form>
-              </div>
-
+            
               {/* Social icons */}
               <div className="flex items-center gap-2">
                 {[

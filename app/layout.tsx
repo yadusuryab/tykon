@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { DM_Sans, DM_Mono, Cormorant_Garamond } from "next/font/google";
+// @ts-ignore - CSS imports are supported by Next.js app router
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "sonner";
