@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Brand from "../utils/brand";
+import Image from "next/image";
 // Replace this import with your actual Brand component:
 // import Brand from "@/components/utils/brand";
 
@@ -60,7 +61,13 @@ export function Preloader() {
         `}
         style={{ transitionDuration: "500ms" }}
       >
-                <Brand className="h-8 w-auto" />
+               <Image
+          src="/logo.png" // Replace with your actual logo path
+          alt="Brand Logo"
+          width={120}
+          height={120}
+          className="object-contain"
+        />
 
         {/* Thin animated progress line */}
         <div className="w-32 h-px bg-black/10 dark:bg-white/10 overflow-hidden rounded-full">

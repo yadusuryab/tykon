@@ -183,7 +183,7 @@ export default function Header() {
       >
         {/* Top accent bar */}
         <div className="absolute top-0 inset-x-0 h-[2px]"
-          style={{ background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.4), var(--color-primary, #e63), transparent)" }} />
+          style={{ background: "linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4), var(--color-primary, #e63), transparent)" }} />
 
         {/* Glass shimmer edge */}
         <div className="absolute top-0 inset-x-0 h-px bg-white/10" />
@@ -327,16 +327,16 @@ export default function Header() {
       {/* ── Liquid Glass Header bar ──────────────────────────────────────── */}
       <header
         className={`fixed top-0 inset-x-0 z-50 mx-4 mt-3 rounded-2xl
-          transition-all duration-500 ease-out`}
+          transition-all duration-500 ease-out `}
         style={{
           // Core liquid glass
           background: scrolled
-            ? "rgba(255,255,255,0.08)"
+            ? "rgba(0, 0, 0, 0.78)"
             : isOverHero
-            ? "rgba(255,255,255,0.05)"
-            : "rgba(255,255,255,0.07)",
-          backdropFilter: "blur(32px) saturate(180%) brightness(1.08)",
-          WebkitBackdropFilter: "blur(32px) saturate(180%) brightness(1.08)",
+            ? "rgba(0, 0, 0, 0.78)"
+            : "rgba(0, 0, 0, 0.78)",
+          backdropFilter: "blur(32px) saturate(180%)",
+          WebkitBackdropFilter: "blur(32px) saturate(180%)",
           // Glass border — top highlight + subtle edge
           border: "1px solid rgba(255,255,255,0.18)",
           borderBottom: "1px solid rgba(255,255,255,0.08)",
